@@ -6,56 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style type="text/css">
+      body, html{
+        background-color: white;
+        margin: 0;
+      } 
+     @media only screen and (max-width: 1000px) {
+      body{
+          margin-top: 44%;
+
+      }
+      .L3, .L4, .L5{
+          margin-top: 0.5vw;
+
+      }
+     }
+
     .L1{
-      margin-top: 3vw;
-      border: black 1vw solid;
-      width: 0vw;
-      height: 23vw;
-      color: black;
-      font-size: 2vw;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      border-top-left-radius: 51vw;
-      border-bottom-left-radius: 25vw;
-      margin-left: 0vw;
+    display: block;
+    margin-top: 3vw;
+    border: black 1vw solid;
+    width: 32vw;
+    height: 23vw;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-top-left-radius: 51vw;
+    border-bottom-left-radius: 25vw;
+    margin-left: 0vw;
     }
     .L2{
-      border: black 1vw solid;
-      height: 23vw;
-      width: 0vw;
-      margin-top: 3vw;
-      margin-left: -1vw;
-      border-top-right-radius: 19vw;
-      margin-right: 23.55vw;
+    display: block;
+    border: black 1vw solid;
+    height: 23vw;
+    margin-top: -23vw;
+    /* width: 0vw; */
+    margin-top: -25vw;
+    margin-left: 33vw;
+    border-top-right-radius: 19vw;
+    margin-right: 12vw;
     }
     .L3{
-      margin-left: 9vw;
-      border: black 1vw solid;
-      width: 17.86vw;
-      height: 9vw;
-      border-bottom-left-radius: 12vw;
-      border-top-left-radius: 1vw;
+    display: block;
+    margin-left: 12vw;
+    border: black 1vw solid;
+    width: 21vw;
+    height: 12vw;
+    border-bottom-left-radius: 12vw;
+    border-top-left-radius: 1vw;
     }
     .L4{
-      margin-left: -1vw;
-      border: black 1vw solid;
-      width: 13vw;
-      height: 9vw;
-      border-bottom-right-radius: 22vw;
+display: block;
+    margin-left: 34vw;
+    border: black 1vw solid;
+    width: 19vw;
+    height: 12vw;
+    margin-top: -14vw;
+    border-bottom-right-radius: 22vw;
     }
     .L5{
-      margin-left: -24vw;
-      border: black 1vw solid;
-      width: 12vw;
-      height: 4vw;
-      border-bottom-right-radius: 8vw;
-      border-bottom-left-radius: 10vw;
-      margin-top: 10vw;
+display: block;
+    margin-left: 22vw;
+    border: black 1vw solid;
+    width: 17vw;
+    height: 6vw;
+    border-bottom-right-radius: 8vw;
+    border-bottom-left-radius: 10vw;
+    margin-top: -1vw;
     }
-    .container{
+/*    .container{
       display: flex;
-    }
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }*/
     .top{
       margin-top: 2vw;
       margin-left: 18vw;
@@ -65,9 +89,10 @@
       margin-top: -1vw;
       margin-left: 22vw;
     }
-    .flex{
+/*    .flex{
       flex-grow: 1;
-    }
+    }*/
+
     a:link{
       text-decoration: none;
       color: black;
@@ -79,138 +104,6 @@
     a:active{
       text-decoration: none;
       color: black;
-    }
-    /*Animations*/
-    @keyframes league {
-      0%{
-
-      }
-      100%{
-
-      }
-    }
-    @keyframes heartBeat {
-      0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-      20% {
-        -webkit-transform: scale(1.8);
-        transform: scale(1.8);
-      }
-      40% {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
-      }
-      60% {
-        -webkit-transform: scale(2);
-        transform: scale(2);
-      }
-      80% {
-        -webkit-transform: scale(0.6);
-        transform: scale(0.6);
-
-      }
-      90% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-
-      }
-      100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-    }
-
-
-    @keyframes rubberBand {
-      from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        opacity: 100%;
-      }
-
-      30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-        opacity: 50%;
-      }
-
-      40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-        opacity: 20%;
-      }
-
-      50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-        opacity: 10%;
-      }
-
-      65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-        opacity: 30%;
-      }
-
-      75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-        opacity: 50%;
-      }
-
-      to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        opacity: 100%;
-      }
-    }
-
-    @keyframes tilt{
-      from{
-        
-        transform: font-size: 13em;
-
-        
-      }
-      to{
-        background-color: red;
-        transform:  font-size: 18em;
-      }
-    }
-
-    @-webkit-keyframes text-pop-up-top {
-      0% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        text-shadow: none;
-      }
-      100% {
-        -webkit-transform: translateY(-50px);
-                transform: translateY(-50px);
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-      }
-    }
-    @keyframes text-pop-up-top {
-      0% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        text-shadow: none;
-      }
-      100% {
-        -webkit-transform: translateY(-50px);
-                transform: translateY(-50px);
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-      }
     }
     @keyframes opacityDrop{
       from{
@@ -228,20 +121,16 @@
         opacity: 100%;
       }
     }
-
-
     .L1::after{
       content: "Portfolio";  
       display: block;
-      font-size: 4vw;
+      font-size: 5vw;
       margin-top: 9vw;
-
     }
     .L1:hover{
       content: "";  
       display: block;
       background-color: yellow;
-
     }
     .L1:hover::after{
       display: block;
@@ -255,7 +144,7 @@
     .L2::after{
       content: "Machine Learning";
       display: block;
-      font-size: 4vw;
+      font-size: 5vw;
       margin-top: 7vw;
       margin-left: 1vw;
     }
@@ -268,6 +157,7 @@
       display: block;
       font-size: 10vw;
       margin-top: 4vw;
+      margin-left: 3vw;
       content: "🧠";
       
       animation-name: opacityRise;
@@ -276,9 +166,9 @@
     .L3::after{
       content: "Knowladge Base";
       display: block;
-      font-size: 2vw;
+      font-size: 3vw;
       margin-top: 2vw;
-      margin-left: 3vw;
+      margin-left: 4vw;
     }
     .L3:hover{
       content: "";  
@@ -298,7 +188,7 @@
     .L4::after{
       content: "League of Legends";
       display: block;
-      font-size: 2vw;
+      font-size: 3vw;
       margin-top: 1vw;
       margin-left: 1vw;
     }
@@ -311,19 +201,18 @@
       display: block;
       font-size: 5vw;
       margin-top: 1vw;
-      margin-left: 2vw;
+      margin-left: 4vw;
       content: "🍄";
       
       animation-name: opacityRise;
       animation-duration: 1s;
     }
-
     .L5::after{
       content: "Variety";
       display: block;
       font-size: 2vw;
       margin-top: 1vw;
-      margin-left: 3vw;
+      margin-left: 5vw;
     }
     .L5:hover{
       content: "";  
@@ -332,29 +221,33 @@
     }
     .L5:hover::after{
       display: block;
-      font-size: 3vw;
-      margin-left: 4vw;
+      font-size: 4vw;
+      margin-left: 6vw;
       margin-top: -0.5vw;
       content: "💭";
       
       animation-name: opacityRise;
       animation-duration: 1s;
     }
+    #brain{
+      width: 100%;
+      height: 100%;
+    }
     </style>
     <title>Hello, world!</title>
   </head>
-  <body id="brain">
-  
- <div class="container top">
-  <a href="google.com" class="L1 flex"></a>
-  <a href="google.com" class="L2 flex"></a>
-  
-</div>
+  <body >
+    <div id = "brain">
+      <div class="container top">
+        <a href="google.com" class="L1 flex"></a>
+        <a href="google.com" class="L2 flex"></a>
+      </div>
 
-<div class="container bot">
-  <a href="google.com" class="L3 flex2"></a>
-  <a href="google.com" class="L4 flex2"></a>
-  <a href="google.com" class="L5 flex2"></a>
-</div>
+      <div class="container bot">
+        <a href="google.com" class="L3 "></a>
+        <a href="google.com" class="L4 "></a>
+        <a href="google.com" class="L5 "></a>
+      </div>
+    </div>
   </body>
-</html>
+</html> 
