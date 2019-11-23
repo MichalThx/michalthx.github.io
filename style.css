@@ -14,12 +14,17 @@
 
 			grid-row-gap: 40px;
 			}
+		.grid h1{
+			font-size: calc(3vw + 3vw);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+    		text-align: center;
+		}
 	      .grid_item{
 	      	display: grid;
 	      	grid-template-rows: max-content 200px auto; 
 	      	overflow: hidden;
 	      	height: 400px;
-	      	border: black solid 4px;
+	      	box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.5);
 	      	border-radius: 10px;
 	      	margin-top: 10px;
 	      }
@@ -41,7 +46,7 @@
 	      .menu {
 	      	padding-left: 0;
 	      	text-transform: uppercase;
-    		font-size: calc(1vw + 1vh);
+    		font-size: calc(1.2vw + 1.2vh);
     		letter-spacing: 3px;
     		color: #575A4A;
 		    line-height: 1em;
@@ -49,8 +54,23 @@
 		    display: flex;
 		    flex-wrap: wrap;
 	      }
+
 	      .menu #category{
 	      	flex: 12;
+	      }
+	      .submenu {
+	      	padding-left: 0;
+	      	text-transform: uppercase;
+    		font-size: calc(1.1vw + 0.9vh);
+    		letter-spacing: 3px;
+    		color: #575A4A;
+		    line-height: 2em;
+		    list-style-type: none;
+		    display: flex;
+		    flex-wrap: wrap;
+	      }
+	      .submenu #category{
+	      	flex: max-content;
 	      }
 
 	      a {
