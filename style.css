@@ -70,7 +70,10 @@
 		    flex-wrap: wrap;
 	      }
 	      .submenu #category{
+	      	width: max-content;
+    		flex: auto;
 	      	flex: max-content;
+	      	
 	      }
 
 	      a {
