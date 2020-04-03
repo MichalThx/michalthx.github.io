@@ -61,7 +61,8 @@ a {
 	text-align: center;
 	font-weight: bold;
 	font-size: 2em;
-	font-family: Roboto; 
+	font-family: 'Montserrat', sans-serif;
+	user-select: none;
 }
 .grid_item img{
 	height: 100%;
@@ -94,6 +95,7 @@ a {
 }
 .navbar_mobile{
 	display: none;
+	flex:1;
 
 }
 .menu{
@@ -127,6 +129,7 @@ a {
 	border-radius: 15px;
 	padding:10px;
 	font-family: 'Montserrat', sans-serif;
+	user-select: none;
 	font-weight: bold;
 	transition: all 0.3s  ease 0s;
 	box-shadow: inset -2px -2px 12px #FFF, inset 2px 2px 12px #A6A2A2,-6px -6px 16px #FFF, 6px 6px 16px #BFBFBF;
@@ -150,6 +153,7 @@ background-color:#E6E6E6;
 .menu a {
 	font-size: calc(12px + 1vh / 3  + (2vw - 16px));
 	font-family: 'Montserrat', sans-serif;
+	user-select: none;
 	/*font-size:2.2em;*/
 	font-weight: bold;
 	border-radius: 15px;
@@ -177,19 +181,20 @@ background-color:#E6E6E6;
 	}
 	.grid_item h2{
 
-	font-size: 1em;
+	/*font-size: 1em;*/
 
 	}
 	.submenu{
 		flex-direction: row;
-		font-size:0.8em;
+		/*font-size:0.8em;*/
 		
 	}
 	.submenu li{
-		/*padding-top: 10px;*/
-		padding: 0px 10px 0px 10px;
-		font-size: 2.5em;
-		border-right:1px solid black;
+		
+		/*padding: 10px 10px 0px 10px;*/
+		/*font-size: 2.5em;*/
+		font-size:1.9em;
+		
 	}
 	.navbar{
 		display: none;
@@ -197,11 +202,13 @@ background-color:#E6E6E6;
 	}
 	.navbar_mobile{
 		display: block;
-		margin:auto;
+		
+		flex:1;
 	}
 	
-	.menu{
-		font-size:0.7em;
+	.menu a{
+		font-size:1.9em;
+		/*margin: auto;*/
 
 	}
 	.submenu li a{
@@ -220,14 +227,15 @@ background-color:#E6E6E6;
 	}
 	.submenu{
 		flex-direction: row;
-		font-size:0.8em;
+		/*font-size:0.8em;*/
 		
 	}
 	.submenu li{
-		/*padding-top: 10px;*/
-		padding: 0px 10px 0px 10px;
-		font-size: 1.5em;
-		border-right:1px solid black;
+		
+		
+		/*padding: 0px 10px 0px 10px;*/
+		font-size: 1.3em;
+		
 	}
 	.navbar{
 		display: none;
@@ -235,17 +243,28 @@ background-color:#E6E6E6;
 	}
 	.navbar_mobile{
 		display: block;
-		margin:auto;
+		
+		flex:1;
 	}
 	.top_menu{
 
 		flex-direction: row-reverse;
+
 	}
 	.menu{
-		font-size:0.6em;
+	
+	}
+	.menu a{
+		font-size:1.3em;
 	}
 	.submenu li a{
 		margin: 0;
+		margin-top:0;
 		/*border-right: 1px solid black;*/
+	}
+}
+@media screen and (max-width: 350px){
+	.submenu li{
+		padding-bottom:20px;
 	}
 }
