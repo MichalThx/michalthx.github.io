@@ -149,6 +149,22 @@ background-color:#E6E6E6;
 	color: #333333; 
 	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF;
 }
+.submenu li a#clicked{
+/*	border-radius: 15px;
+	padding:10px;
+	font-family: 'Montserrat', sans-serif;
+	user-select: none;
+	font-weight: bold;
+	transition: all 0.3s  ease 0s;
+	box-shadow: inset -2px -2px 12px #FFF, inset 2px 2px 12px #A6A2A2,-6px -6px 16px #FFF, 6px 6px 16px #BFBFBF;
+	border:2px;
+	border-style: inset;
+	border-color: #FFF #BFBFBF #BFBFBF #FFF;*/
+	filter: grayscale(90%);
+	background-color:#D9D9D9 !important;
+	color: #333333 !important; 
+	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF !important;
+}
 
 .menu a {
 	font-size: calc(12px + 1vh / 3  + (2vw - 16px));
