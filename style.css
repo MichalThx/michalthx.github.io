@@ -152,6 +152,7 @@ background-color:#E6E6E6;
 	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF !important;
 }
 
+
 .menu a {
 	font-size: calc(12px + 1vh / 3  + (2vw - 16px));
 	font-family: 'Montserrat', sans-serif;
@@ -175,6 +176,12 @@ background-color:#E6E6E6;
 	background-color:#D9D9D9;
 	color: #333333; 
 	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF;
+}
+.menu a#clicked{
+	filter: grayscale(90%);
+	background-color:#D9D9D9 !important;
+	color: #333333 !important; 
+	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF !important;
 }
 @media screen and (max-width: 900px){
 	.grid_item{
