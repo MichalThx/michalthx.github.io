@@ -17,8 +17,6 @@ a {
 	text-decoration: none;
 	color: black;
 }
-
-/* GRID CONTENT*/
 .grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -70,48 +68,36 @@ a {
 	object-fit: cover;
 	border: gray 4px solid;
 	border-radius: 32px;
-
 }
 .grid_item p{
 	margin:5px 5px 10px 10px;
     padding-top: 10px;
     text-align: justify;
-
 }	
-
-/* END OF THE GRID CONTENT*/
-
 .top_menu{
 	display: flex;
 	flex-direction: row-reverse;
 	padding-bottom: calc(2vh - 10px);
-
 }
-
 .navbar{
 	display: block;
 	flex:1;
-
 }
 .navbar_mobile{
 	display: none;
 	flex:1;
-
 }
 .menu{
-
 	text-transform: uppercase;
 	list-style-type: none;
 	font-weight: bold;
 	margin:auto;
 }
-
 .submenu {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .submenu li{
 	font-size: calc(12px + 1vh / 3  + (2vw - 16px));
 	max-width: max-content;
@@ -120,7 +106,6 @@ a {
 .submenu li:nth-child(1){
 	margin:auto;
 	margin-left:0;
-
 }
 .submenu li a{
 	/*margin: 0px 40px 0px 0px;*/
@@ -151,8 +136,6 @@ background-color:#E6E6E6;
 	color: #333333 !important; 
 	box-shadow: inset 3px 3px 10px #686868, inset -3px -3px 10px #FFFFFF !important;
 }
-
-
 .menu a {
 	font-size: calc(12px + 1vh / 3  + (2vw - 16px));
 	font-family: 'Montserrat', sans-serif;
@@ -187,11 +170,6 @@ background-color:#E6E6E6;
 	.grid_item{
 		height: 400px;
 	}
-	.grid_item h2{
-
-	/*font-size: 1em;*/
-
-	}
 	.submenu{
 		flex-direction: row;
 	}
@@ -200,14 +178,11 @@ background-color:#E6E6E6;
 	}
 	.navbar{
 		display: none;
-
 	}
 	.navbar_mobile{
 		display: block;
-		
 		flex:1;
 	}
-	
 	.menu a{
 		font-size:1.9em;
 	}
@@ -220,9 +195,7 @@ background-color:#E6E6E6;
 		height: 400px;
 	}
 	.grid_item h2{
-
-	font-size: 1em;
-
+		font-size: 1em;
 	}
 	.submenu{
 		flex-direction: row;
